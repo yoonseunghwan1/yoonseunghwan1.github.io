@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The latest model</title>
+<style>
+  hr {
+    border: none; 
+    border-top: 1px solid #000; 
+    margin: 20px 0; /
+  }
+  .redtext{
+    color:red;
+    font-size: 50px;
+  }
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float:left;
+      width: 50%;
+      padding: 10px;
+      display: flex; /* 컬럼 내부의 요소를 수직으로 정렬하기 위해 */
+      flex-direction: column; /* 수직으로 정렬 */
+      justify-content: space-between; /* 위 아래로 균등하게 공간 배분 */
+      min-height: 400px; /* 최소 높이를 동일하게 설정 */
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .image {
+      float: left; 
+      margin-right: 20px; 
+    }
+
+    .text {
+      overflow: hidden; 
+    }
+    .text-size {
+    font-size: 24px;
+    }
+    .right-align {
+      text-align: right;
+      }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <div class="text">
+        <h1><span class="redtext">The latest model</span></h1>
+        <h2>iPhone 15/Pluse/Pro/Pro Max </h2>
+        <p>
+          <img src="iphone15.jpg" alt="iphone image" Class="image">
+          <b><span class="text-size">Common Features</span></b> <br>
+          <b>Design</b>: Similar to iPhone 14, but with Dynamic Island technology from iPhone 14 Pro.<br>
+          <b>Colors</b>: Blue, Pink, Yellow, Green, Black (No white option).<br>
+          <b>Network</b>: 5G NR support, LTE speeds up to 2.5 Gbps down and 316 Mbps up.<br>
+          <b>Wi-Fi</b>: Supports Wi-Fi 1/3/4/6 on 2.4 GHz and Wi-Fi 2/4/5/6 on 5 GHz.<br>
+          <b>Processor</b>: Apple A16 Bionic chip (TSMC 4nm), with 6-core CPU, 5-core GPU, and 16-core Neural Engine.<br>
+          <b>>RAM</b>: 6GB LPDDR5 SDRAM.<br>
+          Storage</b>: Options of 128GB, 256GB, or 512GB using NVMe NAND flash.</p>
+        </div>
+
+    </div>
+    <div class="column">
+      <p class="right-align"><b>Created by<br> Seung Hwan Yoon</b></p>
+      <h2>
+        Technology
+      <hr>
+      </h2>
+      <p>
+      <b>Apple Pay</b>
+      Apple's NFC-based payment service that supports FeliCa for seamless usage of transportation cards worldwide. It also offers Express Card functionality for using registered transportation cards even when the device is powered off.
+      <hr>
+      <b>Collision Detection and Automatic Emergency Call</b>
+      Utilizes sensors including an accelerometer and barometer to detect collisions like traffic accidents based on over a million hours of driving data. It automatically initiates an emergency call when necessary.
+      <hr>
+      <b>Dynamic Island</b>
+      Utilizes the front punch-hole design to display real-time apps and notifications in a smaller area with smooth animations. Long-pressing allows for quick access to tasks running in the background.
+      <hr>
+      <b>SOS Function via Satellite Communication</b>
+      Utilizes Globalstar's satellites to transmit emergency messages. While only simple text messages can be sent due to slower transmission speeds, it offers free usage for two years and is available in various countries.
+      <hr>
+      <b>Next-Generation Portrait Mode</b>
+      Automatically saves depth data when people or pets are detected in the scene, allowing users to switch to portrait mode or adjust focus and depth even after taking a normal photo.
+      <hr>
+      <b>Charging Limit Function</b>
+      Includes a "Charge Limit to 80%" function to maintain battery performance. Charging stops at 80% and resumes at 75% to optimize battery health.
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+     
+      
+    </p>
+    </div>
+</body>
+</html>
+
