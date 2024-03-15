@@ -366,7 +366,7 @@ a:hover {
 
 <div class="container wrapper">
   <div id="top">
-    <h1>My name is SeungHwanYoon</h1>
+    <h1>This is SeungHwanYoon Homepage</h1>
     <p>Use the menu to select different Stylesheets</p>
   </div>
   <div class="wrapper">
@@ -377,6 +377,7 @@ a:hover {
        <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
        <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
        <li class="menuitem" onclick="noStyles()">No Stylesheet
+       <li class="menuitem" onclick="goToHomework()">Homework2</li>
      </ul>
     </div>
     <div id="main">
@@ -385,7 +386,8 @@ a:hover {
       <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
       <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
       <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>,
+     
       </p>
        <h2>No Styles</h2>
       <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
@@ -439,7 +441,10 @@ document.body.appendChild(div);
 //alert(document.getElementsByTagName("STYLE")[n].innerHTML);
 }
 reStyle(0);
+
+function goToHomework() {
+window.location.href = 'Homework2.html';
+}
 </script>
 </body>
 </html>
-
