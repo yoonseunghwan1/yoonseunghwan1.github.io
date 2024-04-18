@@ -7,7 +7,7 @@
     </head>
 <body>
     <h1>
-        문제2
+        문제2 Sorting
     </h1>
     <form method="POST" action="">
     값을 입력하세요 : <input type="number" name="num"/>
