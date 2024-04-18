@@ -13,24 +13,36 @@
         if(isset($_POST['num'])){
             $num = $_POST['num'];
             $sum_even = 0;
-            $sum_odd = 0;
-            echo "<p>sum of even number less than $num: </p>";
+            $sum_odd = 1;
+            echo "sum of even number less than $num : ";
             for($i=0;$i<$num;$i+=2){
-                echo "$i + ";
-                $sum_even+=$i;
-                if($sum_even==$num){
-                    echo " $sum_even";
+                if($i==0){
+                    echo "0";
                 }
+                else{
+                    echo " + $i ";
+                    $sum_even+=$i;
                 }
-            echo "<p>sum of odd number less than : </p>";
-            for($i=1;$i<$num;$i+=2){
-                echo "$i + ";
-                $sum_odd+=$i;
-                if($sum_odd==$num){
-                    echo "$sum_odd";
-                }
+            }   
+            if($sum_even>=$num){
+                echo "= $sum_even";
             }
-        }
+            echo "<br>";
+            echo "sum of odd number less than $num: ";
+            for($i=1;$i<$num;$i+=2){
+                if($i==1){
+                    echo "1";
+                }
+                else{
+                    echo " + $i";
+                    $sum_odd+=$i;
+                }
+            }    
+            if($sum_odd>=$num){
+                echo "= $sum_odd";
+                }
+         }   
+        
     ?>
     
     </body>
